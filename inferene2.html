@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EDDIS & Deep Booster</title>
+        <!-- <link rel="stylesheet" href="./practice.css" text="text/css"> -->
+        <link rel="stylesheet" href="./css/inference2.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+      
+        <script src="https://kit.fontawesome.com/4b5b95ee5b.js" crossorigin="anonymous"></script>
+        <style>
+            
+        </style>
+
+        <script type="text/javascript">
+            function doSomething(){
+                    alart("Hello World!");
+            }
+        </script>
+    </head>
+    <body>
+       
+        <div class="nav_bar" style="display: flex; background-color: #1446C0; width: 100%; height: 50px; font-weight: 500; cursor: pointer;">
+            <div class="logo" style="color: rgb(255, 255, 255); font-size: 20px; background-color: #1446C0;width: 400px; padding-left: 20px; line-height: 50px;">EDDIS & Deep Booster</div>
+            <div class="nav_menu" style="display: flex; text-align: center; background-color: #1446C0; width: 50%; color: white; line-height: 50px; font-size: 17px; ">
+              <a href="./train.html" ><div class="train" style="width: 120px;  margin-left: 220px; "> Train </div></a>
+                <a href="./inferene.html" style="text-decoration: none;"> <div class="inference" style="width: 120px;  margin-left: 70px; background-color: white; color:#1446C0;  " >Inference</div></a>
+                 <a href="./dashboard.html"><div class="dashboard" style="width: 120px;  margin-left: 70px; ;">Dashboard</div></a>
+                <div class="systemboard" style="width: 120px;  margin-left: 70px;">Systemboard</div>
+            </div>
+
+        </div>
+
+        <!-- Modal -->
+            
+        <div class="contain">
+           <div class="cotainer_inner" style="width: 80%; margin: 0 auto; height: 910px; padding-top: 230px;">
+
+              <div class="tectcon" style="width: 100%; height: 60%;">
+
+
+
+                    <div class="algo" style="display: flex;">
+                      <div class="algotext" style="margin-left: 500px; line-height: 30px; font-size: 17px; font-weight: 600; color: rgb(88, 88, 88);">알고리즘 선택</div> 
+                      <fieldset disabled>
+                     
+                        <div class="form-group" style="position:absolute; top: 255px; left: 830px; width: 300px;">
+                          <label for="disabledTextInput"></label>
+                          <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                        </div>
+                        <div class="form-group">
+                          
+                      </fieldset>
+
+                    
+                      
+                  </div>
+
+                  <div class="dhqtus" style="width: 100%; padding-left: 700px; padding-top: 80px; font-size: 18px; font-weight: 600;">옵션
+                        
+                  </div>
+
+
+                <div class="algo" style="display: flex; margin-top: 30px;">
+                  <div class="algotext" style="margin-left: 478px;  ine-height: 40px; font-size: 17px; font-weight: 600; color: rgb(88, 88, 88);">입력 데이터 선택</div> 
+
+                  <form>
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="customFile" style="margin-left: 32px;">
+                      <label class="custom-file-label" for="customFile" style="margin-left: 32px; height: 35px;">Choose file</label>
+                    </div>
+                  </form>
+              </div>
+
+              <div class="form-group row" style="margin-top: 50px;">
+                <label for="inputPassword" class="col-form-label" style="line-height: 15px;  margin-left: 525px; " > Learning rate</label>
+                <div class="col" >
+                  <input type="texta" class="form-control" id="inputPassword" style="width:130px; height: 30px; background-color: rgb(230, 230, 230); margin-left: 20px;  " placeholder="0.0001">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputPassword" class="col-form-label" style="line-height: 15px;  margin-left: 545px; " > Max bacth</label>
+                <div class="col" >
+                  <input type="texta" class="form-control" id="inputPassword" style="width:130px; height: 30px; background-color: rgb(230, 230, 230); margin-left: 20px; " placeholder="1">
+                </div>
+              </div>
+          
+              <div class="form-group row">
+                <label for="inputPassword" class="col-form-label" style="line-height: 15px;  margin-left: 575px; " > Decay</label>
+                <div class="col" >
+                  <input type="texta" class="form-control" id="inputPassword" style="width:130px; height: 30px; background-color: rgb(230, 230, 230); margin-left: 20px;  " placeholder="0.9">
+                </div>
+              </div>
+          
+          
+
+              <a >
+
+
+
+
+
+                
+               <div class="next">
+                <button type="button" class="btn" style="background-color: #FF9900; color: white; width: 100px; font-weight: 600; margin-left: 700px; margin-top: 150px;">Inference</button>
+               </div>
+
+                
+                         
+                        </div>
+                    </div>
+                </div>
+
+
+
+  
+            </div>
+
+           
+        </div>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    </body>
+</html>

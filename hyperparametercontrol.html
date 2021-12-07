@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EDDIS & Deep Booster</title>
+        <!-- <link rel="stylesheet" href="./practice.css" text="text/css"> -->
+        <link rel="stylesheet" href="./css/hyperparametercontrol.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+      
+        <script src="https://kit.fontawesome.com/4b5b95ee5b.js" crossorigin="anonymous"></script>
+        <style>
+            
+        </style>
+
+        <script type="text/javascript">
+            function doSomething(){
+                    alart("Hello World!");
+            }
+        </script>
+    </head>
+    <body>
+       
+        <div class="nav_bar" style="display: flex; background-color: #1446C0; width: 100%; height: 50px; font-weight: 500; cursor: pointer;">
+            <div class="logo" style="color: rgb(255, 255, 255); font-size: 20px; background-color: #1446C0;width: 400px; padding-left: 20px; line-height: 50px;">EDDIS & Deep Booster</div>
+            <div class="nav_menu" style="display: flex; text-align: center; background-color: #1446C0; width: 50%; color: white; line-height: 50px; font-size: 17px; ">
+              <a href="./train.html" style="text-decoration: none;"> <div class="train" style="width: 120px;  margin-left: 220px; background-color: white; color:#1446C0 ;">Train</div></a>
+              <a href="./inferene.html" style="text-decoration: none;"><div class="inference" style="width: 120px;  margin-left: 70px;">Inference</div></a>
+              <a href="./dashboard.html" style="text-decoration: none; "> <div class="dashboard" style="width: 120px;  margin-left: 70px; "> Dashboard</div></a>
+              <div class="systemboard" style="width: 120px;  margin-left: 70px;">Systemboard</div>
+            </div>
+
+        </div>
+
+        <!-- Modal -->
+            
+        <div class="contain">
+           <div class="cotainer_inner" style="width: 80%; margin: 0 auto; height: 910px;">
+                
+                
+                <div class="main" style="display: inline-block; background-color: rgb(255, 255, 255); height: 15%;">
+                    <div class="main_title" style="color:#1446C0; width: 80%; padding-left: 600px; font-size: 36px; line-height: 130px; font-weight: 700; " >Hyper parameter Contral</div>
+                  <div class="sub" style="font-size: 20px; margin-left: 750px; font-weight: 500; color:#E08150; position: absolute; top: 150px;">ResNet50</div>
+                </div>
+
+                <div class="generalinner">
+                    <div class="general" style="font-size: 22px; font-weight: 600; width: 100%; padding-left: 755px; margin-top: 20px; color: rgb(100, 100, 100);">General</div>
+                    <div class="genebox">
+                        <div class="lr">                
+                                <form class="form-inline">
+                                    <div class="form-group" style="margin-left: 500px; margin-top: 20px;">
+                                      <label for="inputlr">Learning Rate</label>
+                                      <input type="text" id="text" class="form-control mx-sm-5" aria-describedby="passwordHelpInline" placeholder="type:float" style="background-color: rgb(238, 238, 238); width: 280px;">
+                                      <small id="passwordHelpInline" class="text-muted">
+                                        0과 1 사이의 부동 소수점
+                                      </small>
+                                    </div>
+                                  </form>
+
+                                  <form class="form-inline">
+                                    <div class="form-group" style="margin-left: 530px; margin-top: 20px;">
+                                      <label for="inputlr">optimizer</label>
+                                      <input type="text" id="text" class="form-control" aria-describedby="passwordHelpInline" placeholder="type:parameter" style="background-color: rgb(238, 238, 238); width: 280px; margin-left: 48px; ">
+                                      <small id="passwordHelpInline" class="text-muted" style="margin-left: 48px;">
+                                        keras에서 지원하는 parameter 사용
+                                      </small>
+                                    </div>
+                                  </form>
+
+                                  <form class="form-inline">
+                                    <div class="form-group" style="margin-left: 570px; margin-top: 20px;">
+                                      <label for="inputlr">loss</label>
+                                      <input type="text" id="text" class="form-control" aria-describedby="passwordHelpInline" placeholder="type:string" style="background-color: rgb(238, 238, 238); width: 280px; margin-left: 48px; ">
+                                      <small id="passwordHelpInline" class="text-muted" style="margin-left: 48px;">
+                                        keras에서 지원하는 parameter 사용
+                                      </small>
+                                    </div>
+                                  </form>
+
+                                  <form class="form-inline">
+                                    <div class="form-group" style="margin-left: 547px; margin-top: 20px;">
+                                      <label for="inputlr">metrics</label>
+                                      <input type="text" id="text" class="form-control" aria-describedby="passwordHelpInline" placeholder="type:string" style="background-color: rgb(238, 238, 238); width: 280px; margin-left: 48px; ">
+                                      <small id="passwordHelpInline" class="text-muted" style="margin-left: 48px;">
+                                        keras에서 지원하는 parameter 사용
+                                      </small>
+                                    </div>
+                                  </form>
+                         
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="Advance" style="margin-top:30px">
+                <p>
+                  <div class="si">
+                    <a class="adcolo" data-toggle="collapse" href="#collapseExample" style="padding-left: 765px; text-decoration: none; font-size: 18px; font-weight: 600; " >
+                      Advance
+                    </a>
+                  </div>
+       
+                  </p>
+                  <div class="collapse" id="collapseExample" style="padding-left: 300px;" >
+                    <div class="advanbody">
+                      <div class="adtext" style="padding-left: 425px; font-size: 13px;">추가 hyper parameter 입력</div>
+
+
+                      <div class="leri" style="display: flex; margin-left: 100px; margin-top: 20px;">
+                        <div class="left" style="width: 450px; padding-left: 60px;">
+                        <div class="form-group row">
+                          <label for="inputPassword" class="col-form-label" style="line-height: 15px; margin-left: 20px;" > directory</label>
+                          <div class="col" >
+                            <input type="texta" class="form-control" id="inputPassword" style="width:130px; height: 30px; background-color: rgb(230, 230, 230); ">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputPassword" class="col-form-label" style="line-height: 15px; margin-left: 43px;" > batch</label>
+                          <div class="col" >
+                            <input type="texta" class="form-control" id="inputPassword" style="width:130px; height: 30px; background-color: rgb(230, 230, 230);  ">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputPassword" class="col-form-label" style="line-height: 15px; margin-left: 43px;" > width</label>
+                          <div class="col" >
+                            <input type="texta" class="form-control" id="inputPassword" style="width:130px; height: 30px; background-color: rgb(230, 230, 230); ">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputPassword" class="col-form-label" style="line-height: 15px; margin-left: 43px;" > labels</label>
+                          <div class="col" >
+                            <input type="texta" class="form-control" id="inputPassword" style="width:130px; height: 30px; background-color: rgb(230, 230, 230); ">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputPassword" class="col-form-label" style="line-height: 15px;" > label model</label>
+                          <div class="col" >
+                            <input type="texta" class="form-control" id="inputPassword" style="width:130px; height: 30px; background-color: rgb(230, 230, 230); ">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputPassword" class="col-form-label" style="line-height: 15px;  margin-left: 2px;" > color mode</label>
+                          <div class="col" >
+                            <input type="texta" class="form-control" id="inputPassword" style="width:130px; height: 30px; background-color: rgb(230, 230, 230); ">
+                          </div>
+                        </div>
+                   
+                        
+      
+                      </div>
+                      <div class="lsdsdt" style="width: 700px;">
+                        <div class="form-group row">
+                          <label for="inputPassword" class="col-form-label" style="line-height: 15px; margin-left: 103px;" > seed</label>
+                          <div class="col" >
+                            <input type="texta" class="form-control" id="inputPassword" style="width:130px; height: 30px; background-color: rgb(230, 230, 230); ">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputPassword" class="col-form-label" style="line-height: 15px; margin-left: 35px;" > validation split</label>
+                          <div class="col" >
+                            <input type="texta" class="form-control" id="inputPassword" style="width:130px; height: 30px; background-color: rgb(230, 230, 230);  ">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputPassword" class="col-form-label" style="line-height: 15px; margin-left: 92px;" > subset</label>
+                          <div class="col" >
+                            <input type="texta" class="form-control" id="inputPassword" style="width:130px; height: 30px; background-color: rgb(230, 230, 230); ">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputPassword" class="col-form-label" style="line-height: 15px; margin-left:47px;" > interpolation</label>
+                          <div class="col" >
+                            <input type="texta" class="form-control" id="inputPassword" style="width:130px; height: 30px; background-color: rgb(230, 230, 230); ">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputPassword" class="col-form-label" style="line-height: 15px; margin-left:60px;" > follow links</label>
+                          <div class="col" >
+                            <input type="texta" class="form-control" id="inputPassword" style="width:130px; height: 30px; background-color: rgb(230, 230, 230); ">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputPassword" class="col-form-label" style="line-height: 15px;  margin-left: 2px; " > crop to aspect ratio</label>
+                          <div class="col" >
+                            <input type="texta" class="form-control" id="inputPassword" style="width:130px; height: 30px; background-color: rgb(230, 230, 230);  ">
+                          </div>
+                        </div>
+      
+      
+      
+                    </div>
+      
+
+      
+                      
+                      </div>
+
+                    
+                    </div>
+
+
+
+
+
+
+                  </div>
+                 
+
+            </div>
+
+          
+               
+            <div class="next">
+              <button type="button" class="btn" style="background-color: #FF9900; color: white; width: 80px; font-weight: 600; position: absolute; top:900px; left: 950px;">Train</button>
+             </div>
+
+        </div>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    </body>
+</html>

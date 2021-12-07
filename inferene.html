@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EDDIS & Deep Booster</title>
+        <!-- <link rel="stylesheet" href="./practice.css" text="text/css"> -->
+        <link rel="stylesheet" href="./css/inference.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+      
+        <script src="https://kit.fontawesome.com/4b5b95ee5b.js" crossorigin="anonymous"></script>
+        <style>
+            
+        </style>
+
+        <script type="text/javascript">
+            function doSomething(){
+                    alart("Hello World!");
+            }
+        </script>
+    </head>
+    <body>
+       
+        <div class="nav_bar" style="display: flex; background-color: #1446C0; width: 100%; height: 50px; font-weight: 500; cursor: pointer;">
+            <div class="logo" style="color: rgb(255, 255, 255); font-size: 20px; background-color: #1446C0;width: 400px; padding-left: 20px; line-height: 50px;">EDDIS & Deep Booster</div>
+            <div class="nav_menu" style="display: flex; text-align: center; background-color: #1446C0; width: 50%; color: white; line-height: 50px; font-size: 17px; ">
+              <a href="./train.html" style="text-decoration: none;"> <div class="train" style="width: 120px;  margin-left: 220px; ">Train</div></a>
+              <a href="./inferene.html" style="text-decoration: none;"><div class="inference" style="width: 120px;  margin-left: 70px; background-color: white; color:#1446C0 ;">Inference</div></a>
+              <a href="./dashboard.html" style="text-decoration: none; "> <div class="dashboard" style="width: 120px;  margin-left: 70px; "> Dashboard</div></a>
+              <div class="systemboard" style="width: 120px;  margin-left: 70px;">Systemboard</div>
+            </div>
+
+        </div>
+
+        <!-- Modal -->
+            
+        <div class="contain">
+           <div class="cotainer_inner" style="width: 80%; margin: 0 auto; height: 910px; padding-top: 230px;">
+
+              <div class="tectcon" style="width: 100%; height: 60%;">
+
+
+
+                    <div class="algo" style="display: flex;">
+                      <div class="algotext" style="margin-left: 500px; line-height: 30px; font-size: 17px; font-weight: 600; color: rgb(88, 88, 88);">알고리즘 선택</div> 
+
+                      
+
+                    <select class="custom-select custom-select-sm" style="width: 300px; margin-left: 30px;">
+                      <option selected>Algorithm selection</option>
+                      <option value="1">Crack Detetor</option>
+                      <option value="2">Crack Measure</option>
+                    </select>
+                  </div>
+
+                  <div class="algo" style="display: flex; margin-top: 30px;">
+                    <div class="algotextdf" style="margin-left: 478px;  ine-height: 30px; font-size: 17px; font-weight: 600; color: rgb(88, 88, 88);">SMB 활성화 여부</div> 
+
+                    <button type="button" class="btn btn-primary btn-sm" style="margin-left: 30px; width: 140px;">On</button>
+                    <button type="button" class="btn btn-secondary btn-sm" style="margin-left: 20px; width: 140px;">Off</button>
+                </div>
+
+                <div class="algo" style="display: flex; margin-top: 30px;">
+                  <div class="algotext" style="margin-left: 478px;  ine-height: 40px; font-size: 17px; font-weight: 600; color: rgb(88, 88, 88);">입력 데이터 선택</div> 
+
+                  <form>
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="customFile" style="margin-left: 32px;">
+                      <label class="custom-file-label" for="customFile" style="margin-left: 32px; height: 35px;">Choose file</label>
+                    </div>
+                  </form>
+              </div>
+
+              
+              <div class="algo" style="display: flex; margin-top: 20px;">
+                <div class="algotext" style="margin-left: 535px;  ine-height: 40px; font-size: 17px; font-weight: 600; color: rgb(88, 88, 88);">분산 처리</div> 
+
+                <button type="button" class="btn btn-primary btn-sm" style="margin-left: 30px; width: 140px;">단일</button>
+                <button type="button" class="btn btn-secondary btn-sm" style="margin-left: 20px; width: 140px;">분산</button>
+            </div>
+
+            <div class="algo" style="display: flex; margin-top: 30px;">
+              <div class="algotextt" style="margin-left: 498px; line-height: 30px; font-size: 17px; font-weight: 600; color: rgb(88, 88, 88);">노드 서버 선택</div> 
+
+              
+
+            <select class="custom-select custom-select-sm" style="width: 300px; margin-left: 30px;">
+              <option selected>selection..</option>
+              <option value="1">server1</option>
+              <option value="2">server2</option>
+            </select>
+          </div>
+
+
+
+
+
+
+
+
+            </div>
+                
+               <div class="next">
+                <button type="button"  class="btn" style="background-color: #FF9900; width: 80px; font-weight: 600; margin-left: 700px; margin-top: 150px;"> <a href="./inferene2.html" style="text-decoration: none;" class="ne">Next</a> </button>
+               </div>
+
+                
+                         
+                        </div>
+                    </div>
+                </div>
+
+
+
+  
+            </div>
+
+           
+        </div>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    </body>
+</html>
